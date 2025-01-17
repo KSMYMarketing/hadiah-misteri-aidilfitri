@@ -1,13 +1,52 @@
-const prizes = [
-    "🎁 Free Coffee",
-    "🎉 $5 Gift Card",
-    "🎟️ Discount Coupon",
-    "🎊 Mystery Prize",
-    "😢 Try Again",
-    "🎈 Extra Spin"
-];
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-function pickPrize() {
-    let randomIndex = Math.floor(Math.random() * prizes.length);
-    document.getElementById("result").innerText = "You got: " + prizes[randomIndex];
+h1 {
+    font-size: 28px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.prize-box {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+button {
+    padding: 15px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #ff4757;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #e84118;
 }
